@@ -1,0 +1,207 @@
+%% start of file `jdoe_casual.tex'.
+%% Copyright 2006 Xavier Danaux.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt]{moderncv}
+
+% moderncv styles
+\moderncvstyle{casual}         % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvstyle{classic}       % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{Walter}
+\familyname{Vargas}
+\title{Técnico Superior en Informática\dots}
+%\address{12 somestreet\\3456 somecity} % for classic style
+\address{San Cristóbal, Edo. Táchira, República Bolivariana de Venezuela }  % for casual style
+\phone{+58 (416)502 37 55}
+\email{walter@covetel.com.ve}
+\extrainfo{\weblink{blogs.covetel.com.ve/walter}}
+\photo[64pt]{jdoe_picture} % also optional, and the optional argument is the height the picture must be resized to
+\quote{Alguna frase ...}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+% command and color used in this document, independently from moderncv 
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textsf{\scriptsize#1}}}% for text subscripts
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\makequote
+
+\section{Información Personal}
+\cvitem{Lugar de Nacimiento}{\small Parroquia Petare - Estado Miranda - República Bolivariana de Venezuela }
+\cvitem{Fecha de Nacimiento}{\small 17 de Febrero de 1985 }
+\cvitem{Estado Civil}{\small Soltero}
+\cvitem{Cédula de Identidad}{\small V-16.612.574}
+\cvitem{GNU/Linux User ID}{\small 268566}
+\cvitem{Dirección}{\small Estado Táchira, Municipio Cárdenas, Urb. Altos de Paramillo, manzana 18, parcela 24, calle 7 los sauces.}
+\cvitem{Correo Electrónico}{\small walter@covetel.com.ve, waltervargas@gmail.com, walter@waltervargas.org}
+\cvitem{Skype}{\small waltervargasm}
+
+\section{Educación}
+\cventry{Actualidad}{Ingenieria en Informática}{Instituto Universitario de Tecnología Agro Industrial Región los Andes}{}{}{ Esperando obtener el título para finales del 2011}
+\cventry{2002--2009}{Técnico Superior en Informática}{Instituto Universitario de Tecnología Agro Industrial Región los Andes}{}{}{}
+\cventry{2000--2001}{Bachiller en Ciencias}{Colegio Andrés Bello López}{}{}{}
+\cventry{1999--2000}{4to Año Diversificado}{J.A. Román Valecillos}{}{}{}
+\cventry{1997--1999}{Ciclo Básico}{Colegio Santa Rosalía de Palermo}{}{}{}
+
+\section{Lenguajes}
+\cvlanguage{Español}{Nativo}{Lectura, Escritura, Comprensión y Expresión.}
+\cvlanguage{Ingles}{Intermedio}{Lectura, Escritura, Comprensión y Expresión}
+\closesection{}
+\pagebreak{}
+
+\section{Habilidades en Computación}
+\cvcomputer{\bfseries{Sistemas Operativos}}{
+	Debian GNU/Linux (Especialmente), 
+	RedHat, 
+	Mandriva, 
+	Unix System V, 
+	Windows NT-2000-XP,
+	BeOS,
+	Linux Router Project,
+	HP-UX,
+	Cisco OS
+}{\bfseries{Administración}}{
+	DNS, DHCP,
+	Open LDAP, 
+	Sendmail, 
+	Postfix, 
+	Dovecot, 
+	Samba, 
+	OpenVPN, 
+	OpenSSL, 
+	OpenCA, 
+	Git, 
+	Subversion, 
+	Trac, 
+	Apache (Mod SSL, Mod Perl, Mod PHP), 
+	Mailman, 
+	Request Tracker, 
+	Squid, 
+	SquidGuard, 
+	Iptables, 
+	Ipchains, 
+	NMAP,
+	WebGUI
+}
+\cvcomputer{\bfseries{Programación}}{
+	\textsc{Pascal}, 
+	C,
+	C++, 
+	SQL
+}{\bfseries{Scripting}}{
+	JavaScript, 
+	Perl, 
+	PHP, 
+	Shell, 
+ 	Ruby
+}
+\cvcomputer{\bfseries{Librerías}}{
+	LWP, LWP::Simple
+	Net::LDAP,
+	DBI,
+	DBIx::Class,
+	Catalyst,
+	HTML::FormFu,
+	Config::General,
+	WWW::Mechanize,
+	XML::LibXML,
+	Catalyst::Controller::REST,
+	Catalyst::View::GD,
+	Catalyst::Model::LDAP,
+	Image::Resize,
+	GD,
+	Moose,
+	QT,
+	GTK+,
+	Statistics::Zscore,
+	Data::Dumper,
+	Spreadsheet::Read,
+}{\bfseries{Tipografía y Diseño}}{
+	\LaTeX, 
+	Scribus, 
+	Inkscape, 
+	Gimp
+}
+\cvcomputer{\bfseries{Desarrollo Web}}{
+	Catalyst Framework,
+	XML, 
+	XLST, 
+	XPATH, 
+	HTML, 
+	XHTML, 
+	CSS, 
+	AJAX, 
+	Patrones de Diseño
+}{\bfseries{Base de Datos}}{
+	MySQL, 
+	PostgreSQL, 
+	SQLite, 
+	Berkeley DB, 
+	CouchDB
+}
+
+\section{Habilidades en Electrónica}
+\cvcomputer{\bfseries{Instrumentación}}{
+	Manejo de Cautin, Multimetro y construcción básica de circuitos impresos.
+}{\bfseries{Radio Difusión}}{
+	Operación de equipos de radio difusión como consolas mezcladoras, ecualizadores, filtros, y equipos de trasmisción como FM/AEQ, micrófonos, construcción de cables XLR a medida.  
+}
+\cvcomputer{\bfseries{Micro Controladores}}{
+	Programación de microcontroladores PIC16F84, PIC16F877, ARM.
+}{\bfseries{Microondas}}{
+	Fundamentos básicos de microondas, transmición y propagación de ondas.
+}
+\cvcomputer{\bfseries{Antenas}}{
+	Construcción de antenas del tipo: Yagi, Omni, Guia de ondas sectorial y Biquad para las frecuencias 2.4 y 5.8 Ghz.
+}{\bfseries{Sistemas Satelitales}}{
+	Instalación, operación y mantenimiento de las estaciones remotas del \bfseries{Satélite Simón Bolivar}
+}
+
+\section{Experiencia}
+\cventry{Diciembre 2007--\\Actualidad}{Coordinador General}{Asociación Cooperativa Venezolana de Tecnologías Libres R.S. (COVETEL)}{San Cristóbal}{ Responsable de las siguientes áreas: Coordinación, Gerencia, Ventas, Proyectos }{}{}
+\cventry{Julio 2010--\\Actualidad}{Contratista}{Centro Nacional de Tecnologías de Información (CNTI)}{San Cristóbal}{Soporte de 4to Nivel bajo la figura de acompañamiento para la Gerencia de Plataforma Tecnológica CNTI}{Tecnologías Involucradas: XEN, KVM, PROXMOX, OCS Inventory, PostgreSQL, Mysql, Perl, PHP, Asesoría para la creación de planes de prevención y contingencia de los servicios, Mantener la disponibilidad de los servicios de las plataformas, Correo, DHCP, DNS, Firewalls, OpenLDAP, Puppet, CFEngine, Trac, SVN, GIT, MoinMoin, Request Tracker, OpenLDAP + Samba, VPN, Firewall, Infraestructura de PKI, Aseguramiento de aplicaciones, Infraestructura de Autenticación y Autorización LDAP, Pruebas de Penetración, Assesment de Vulnerabilidades, Hardening de Servicios, SGSI + ISO 27001-2, Investigación Forense, Telefonía IP, Nagios, Zabbix, OSSIM, Heartbeat V2, DRBD, Linux-HA, OCFS2, iSCSI, Cluster XEN, Open Cluster Framework.}{}
+\cventry{Junio 2010--\\Actualidad}{Contratista}{Centro Nacional de Tecnologías de Información (CNTI)}{San Cristóbal}{Desarrollo del Sistema para la Elaboración Automatizada de Carnets Institucionales basado en LDAP}{Tecnologías Involucradas: OpenLDAP, Perl, Catalyst Framework, HTML::FormFu, Moose, REST, GD, File::Tar, XHTML, CSS, AJAX}{}
+\cventry{Enero 2010--\\Actualidad}{Contratista}{Centro Nacional de Tecnologías de Información (CNTI)}{San Cristóbal}{Desarrollo del Sistema para la Automatización del protocolo de prueba de portales de Internet}{Tecnologías Involucradas: Perl, Catalyst Framework, HTML::FormFu, Moose, PostgreSQL, DBIx::Class, REST, SOAP, WSDL, OpenLDAP}{}
+\cventry{Enero 2010--\\Actualidad}{Contratista}{Compañia Anónima Nacional Teléfonos de Venezuela (CANTV)}{San Cristóbal}{Despliegue Satelital Simón Bolívar}{Resposabilidades: Instalación, Puesta a Punto y Mantenimiento de las terminales terrestres del Satélite Simón Bolivar en el estado Táchira}{}
+\cventry{Noviembre 2009--\\Diciembre 2009}{Contratista}{Compañia Anónima Nacional Teléfonos de Venezuela (CANTV)}{Caracas}{Fue Dictado un Curso Especializado e Intensivo de Xen - LDAP - Correo - Samba - Alta Disponibilidad al Equipo del Proyecto de Migración a Software Libre CANTV}{Tecnologías Involucradas: XEN, OpenLDAP, Postfix, Dovecot, Samba}{}
+
+\section{Intereses}
+\cvitem{Diseño}{\small Fanático del Diseño y la Fotografía.}
+\cvitem{Deportes}{\small Natación, Montañismo, Parapente, Paracaidismo}
+\cvitem{Bricolaje}{\small Fanático de las maquinas y herramientas para trabajo con madera, metal y plastico}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{jdoe_publications}
+
+\end{document}
+
+%% end of file `jdoe_casual.tex'.
